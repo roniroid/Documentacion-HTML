@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Introducción a atributos</title>
+    <style>
+        .paragraph-1 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="/index.html">Índice</a></li>
+            <li><a href="/titulos-y-parrafos.html">Títulos y Párrafos</a></li>
+            <li><a href="/elementos-de-bloque.html">Elementos de bloque</a></li>
+            <li><a href="/elementos-de-linea.html">Elementos de línea</a></li>
+            <li><a href="/seccion-de-contenido-I.html">Sección de contenido I</a></li>
+            <li><a href="/section-vs-article.html">Section vs Article</a></li>
+            <li><a href="/introduccion-a-atributos.html">Introducción a atributos</a></li>
+            <li><a href="/introduccion-a-enlaces.html">Introducción a enlaces</a></li>
+        </ul>
+        <br>
+        <h1>Introducción a atributos</h1>
+    </header>
+    <main>
+        <p>
+            Los atributos son valores adicionales que configuran los elementos y/o ajustan su comportamiento. En términos generales hay dos tipos de atributos:
+            <br>
+            <br>
+            <strong>Comunes</strong>
+            <br>
+            Su sintaxis es → atributos="valor"
+            <br>
+            <strong>Booleanos</strong>
+            <br>
+            Su sintaxis es → atributos
+        </p>
+        <p>
+            Algunos atributos globales que están disponibles para la mayoría de etiquetas en HTML son:
+            <br>
+            <strong>class</strong> → este atributo se usa para dar estilos a través de CSS
+            <br>
+            <strong>id</strong> → es un identificador único que se utiliza para seleccionar el elemento desde JS o CSS, y para hacer navegación a través de anclas
+            <br>
+            <strong>title</strong> → es un atributo que ayuda a la accesibilidad mostrando una descripción del elemento al que pertenece. Aparece el mensaje en un tooltip (caja de texto)
+            <br>
+            <strong>data-*</strong> → es un atributo que nos permite guardar algún valor en la etiqueta HTML
+            <br>
+        </p>
+        <br>
+        <p class="paragraph-1">CLASS</p>
+        <p><strong id="paragraph1">IDENTIFICADOR</strong><small> ← click</small></p>
+        <p title="Este es un ejemplo del atributo title">TÍTULO CON TOOLTIP</p>
+        <p id="paragraph2" data-ejemplo1="Datos de ejemplo 1" data-ejemplo2="Datos de ejemplo 2">Datos pasados en la etiqueta</p>
+    </main>
+    <footer>
+        Curso completo HTML 2022
+    </footer>
+    <script>
+        const paragraph = document.getElementById('paragraph1');
+        paragraph.addEventListener(
+            'click',
+            () => paragraph.classList.toggle('paragraph-1')
+        );
+
+        const paragraph2 = document.getElementById('paragraph2');
+        paragraph2.addEventListener(
+            'click',
+            () => {
+                if(paragraph2.innerText === paragraph2.dataset.ejemplo1)
+                    paragraph2.innerText = paragraph2.dataset.ejemplo2;
+                else
+                    paragraph2.innerText = paragraph2.dataset.ejemplo1;
+            }
+        );
+
+    </script>
+</body>
+</html>

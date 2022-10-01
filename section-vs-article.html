@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Section vs Article</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="/index.html">Índice</a></li>
+            <li><a href="/titulos-y-parrafos.html">Títulos y Párrafos</a></li>
+            <li><a href="/elementos-de-bloque.html">Elementos de bloque</a></li>
+            <li><a href="/elementos-de-linea.html">Elementos de línea</a></li>
+            <li><a href="/seccion-de-contenido-I.html">Sección de contenido I</a></li>
+            <li><a href="/section-vs-article.html">Section vs Article</a></li>
+            <li><a href="/introduccion-a-atributos.html">Introducción a atributos</a></li>
+            <li><a href="/introduccion-a-enlaces.html">Introducción a enlaces</a></li>
+        </ul>
+        <br>
+        <h1>Section vs Article</h1>
+        <hr>
+        <h1>NOTICIAS NACIONALES</h1>
+    </header>
+    <main>
+        <ul>
+            <li>
+                section: es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total usaremos section.
+            </li>
+            <li>
+                article: es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendría sentido por sí mismo.
+            </li>
+            <li>
+                aside: se utiliza para representar contenido relacionado, pero que no forma parte del contenido principal
+            </li>
+            <li>
+                Anidamiento: un section puede contener articles, por ejemplo, si tenemos varios artículos que hablan sobre etiquetas HTML, deben ir dentro de un section, ya que es un contenido relacionado entre sí, y los articles serían contenido independiente porque podríamos leer uno sin haber leído el resto, y seguiría teniendo sentido.
+            </li>
+        </ul>
+        <p>
+            El article es definido como un componente de la página de contenido independiente, esto implica que esta etiqueta pueda tener un header y un footer propios.
+            También existe el caso en el que un article contenga varias sections, el artículo independiente podría ser navegadores y este contener dentro de secciones como navegadores más utilizados en 2020
+            <br>
+            <br>
+            <i>Para revisar contenido HTML: https://validator.w3.org/nu/#textarea</i>
+        </p>
+        <h1>
+            → Articles dentro de sections
+        </h1>
+        <section>
+            <h2>Noticias del día</h2>
+            <article>
+                <header>
+                    <h3>Noticia 1</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati neque quisquam dolor quos eligendi, quidem mollitia, ipsam voluptatem ad, commodi blanditiis quis expedita. Quidem veniam autem dolorum praesentium explicabo.
+                </p>
+                <footer>
+                    El evento ocurrió en San José
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>Noticia 2</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati neque quisquam dolor quos eligendi, quidem mollitia, ipsam voluptatem ad, commodi blanditiis quis expedita. Quidem veniam autem dolorum praesentium explicabo.
+                </p>
+                <footer>
+                    El evento ocurrió en Alajuela
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>Noticia 3</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati neque quisquam dolor quos eligendi, quidem mollitia, ipsam voluptatem ad, commodi blanditiis quis expedita. Quidem veniam autem dolorum praesentium explicabo.
+                </p>
+                <footer>
+                    El evento ocurrió en Cartago
+                </footer>
+            </article>
+        </section>
+        <br>
+        <h1>
+            Sections dentro de articles
+        </h1>
+        <article>
+            <h2>Navegadores más utilizados en 2020</h2>
+            <section>
+                <header>
+                    <h3>Google Chrome</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eaque excepturi corrupti architecto, beatae in! Culpa, ipsum magnam. Aut dolorem corporis eaque repudiandae dicta fuga dolores sunt impedit reiciendis! Quas.
+                </p>
+                <footer>
+                    Creado por Google
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <h3>Mozilla Firefox</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eaque excepturi corrupti architecto, beatae in! Culpa, ipsum magnam. Aut dolorem corporis eaque repudiandae dicta fuga dolores sunt impedit reiciendis! Quas.
+                </p>
+                <footer>
+                    Creado por Mozilla
+                </footer>
+            </section>
+        </article>
+        <br>
+        <h1>
+            Aside
+        </h1>
+        <aside>
+            Visita mi canal de YouTube
+        </aside>
+    </main>
+    <footer>
+        29-09-2022
+    </footer>
+</body>
+</html>

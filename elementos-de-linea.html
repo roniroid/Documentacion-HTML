@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de línea</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="/index.html">Índice</a></li>
+            <li><a href="/titulos-y-parrafos.html">Títulos y Párrafos</a></li>
+            <li><a href="/elementos-de-bloque.html">Elementos de bloque</a></li>
+            <li><a href="/elementos-de-linea.html">Elementos de línea</a></li>
+            <li><a href="/seccion-de-contenido-I.html">Sección de contenido I</a></li>
+            <li><a href="/section-vs-article.html">Section vs Article</a></li>
+            <li><a href="/introduccion-a-atributos.html">Introducción a atributos</a></li>
+            <li><a href="/introduccion-a-enlaces.html">Introducción a enlaces</a></li>
+        </ul>
+        <br>
+        <h1>Elementos de línea</h1>
+    </header>
+    <main>
+        <span>Soy un elemento de línea</span>
+        <span>Soy otro elemento de línea</span>
+        <hr>
+        Elementos de línea:
+        <p>
+            Los elementos de línea cubren el espacio ocupado por sus elementos hijos, por lo que no tiene salto de línea fijo
+    
+            <wbr>CSS: tienen → display: inline; ← por defecto
+        </p>
+        <br>
+        <!-- 
+            <em></em>      →   emphasis
+            <strong></strong>  →   más énfasis
+            <small></small>   →   menos énfasis que el texto normal
+            <br> - <br />      →   forzar salto de línea
+            <wbr> - <wbr />     →   salto de línea si hace falta
+            <time></time>    →   se usa para representar un contenido de hora/fecha
+            <sup></sup>    →   super índice, por ejemplo, exponentes
+            <sub></sub>    →   sub índice, por ejemplo, fórmulas químicas
+    
+            Las siguientes sólo sirven para dar estilo fuera de css
+            ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+            <i></i>       →   italic
+            <b></b>       →   bold
+            <u></u>       →   underline 
+            ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+        -->
+        <!-- <em></em> -->
+        <p>
+            <strong>&lt;em&gt;&lt;/em&gt;</strong>
+            <br>
+            ↓↓↓
+            <br>
+            <em>El dinero</em> es importante, pero la salud lo es más
+        </p>
+        <!-- <strong></strong> -->
+        <p>
+            <strong>&lt;strong&gt;&lt;/strong&gt;</strong>
+            <br>
+            ↓↓↓
+            <br>
+            El dinero es importante, pero <strong>la salud</strong> lo es más
+        </p>
+        <!-- <small></small>  -->
+        <p>
+            <strong>&lt;small&gt;&lt;/small&gt;</strong>
+            <br>
+            ↓↓↓
+            <br>
+            <small>El dinero es importante, pero la salud lo es más</small>
+        </p>
+        <!-- <br></br> -->
+        <p>
+            <strong>&lt;br /&gt;</strong>
+            <br>
+            ↓↓↓
+            <br>
+            <small>El dinero es importante, <br> pero la salud lo es más</small>
+        </p>
+        <!-- <wbr> -->
+        <p>
+            <strong>&lt;wbr&gt;</strong>
+            <br>
+            ↓↓↓
+            <br>
+            http://127.0.0.1:5500/<wbr>cursos/<wbr>html/<wbr>elementos/<wbr>index.html
+        </p>
+        <!-- <time></time> -->
+        <p>
+            <strong>&lt;time&gt;&lt;/time&gt;</strong>
+            <br>
+            ↓↓↓
+            <br>
+            <time datetime="2022-10-01 13:10:00">1/10/2022 13:10</time>
+        </p>
+        <!-- <sup></sup> -->
+        <p>
+            <strong>&lt;sup&gt;&lt;/sup&gt;</strong>
+            <br>
+            ↓↓↓
+            <br>
+            4 elevando al cuadrado se representa así:
+            <h3>
+                4<sup>2</sup>
+            </h3>
+        </p>
+        <!-- <sub></sub> -->
+        <p>
+            <strong>&lt;sub&gt;&lt;/sub&gt;</strong>
+            <br>
+            ↓↓↓
+            <br>
+            Símbolo químico del agua:
+            <h3>
+                H<sub>2</sub>O
+            </h3>
+        </p>
+        <!-- <i></i> -->
+        <p>
+            <strong>&lt;i&gt;&lt;/i&gt;</strong>
+            <br>
+            ↓↓↓
+            <br>
+            <i>El dinero es importante, pero la salud lo es más</i>
+        </p>
+        <!-- <b></b> -->
+        <p>
+            <strong>&lt;b&gt;&lt;/b&gt;</strong>
+            <br>
+            ↓↓↓
+            <br>
+            <b>El dinero es importante, pero la salud lo es más</b>
+        </p>
+        <!-- <u></u> -->
+        <p>
+            <strong>&lt;u&gt;&lt;/u&gt;</strong>
+            <br>
+            ↓↓↓
+            <br>
+            <u>El dinero es importante, pero la salud lo es más</u>
+        </p>
+    </main>
+    <footer>
+        Curso completo HTML 2022
+    </footer>
+</body>
+</html>
